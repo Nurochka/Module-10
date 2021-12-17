@@ -1,0 +1,13 @@
+info: Opening "https://www.bosch.com/" url
+info: Clicking "CookieButton"
+info: Clicking "Menu"
+info: Clicking "ProductsAndServices"
+info: Clicking "AtHome"
+info: Clicking "HomeAppliancesButton"
+info: Clicking "ContinentDropdown"
+info: Clicking "Europe" text in "Continent"
+info: Clicking "CountryDropdown"
+info: Clicking "Belarus" text in "Country"
+info: Clicking "GoToHomeAppliances"
+info: Clicking "SearchButton"
+debug: Count of "SearchResult" is "20"

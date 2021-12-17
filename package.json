@@ -1,0 +1,30 @@
+{
+  "name": "protractor_testing",
+  "version": "1.0.0",
+  "description": "simple project with page_object_pattern",
+  "main": "index.js",
+  "directories": {
+    "test": "protractor ./test/config/protractor.config.js"
+  },
+  "scripts": {
+    "remove-logs": "node ./test/utils/cleanup/logsCleaner.js",
+    "pretest": "npm run remove-logs",
+    "test": "protractor ./test/config/protractor.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurochka/Module-9_TA-Framework.git"
+  },
+  "author": "Hanna Ivanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nurochka/Module-9_TA-Framework/issues"
+  },
+  "homepage": "https://github.com/Nurochka/Module-9_TA-Framework#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "protractor": "^7.0.0",
+    "winston": "^3.3.3",
+    "yargs": "^17.3.0"
+  }
+}
