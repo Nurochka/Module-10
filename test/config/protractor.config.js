@@ -1,5 +1,6 @@
 // An example configuration file.
 const yargs = require('yargs').argv;
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
 exports.config = {
   directConnect: true,
@@ -13,6 +14,13 @@ exports.config = {
 
   onPrepare: function(){
     browser.manage().window().maximize();
+    jasmine.getEnv().addReporter(
+      new Jasmine2HtmlReporter({
+        savePath: '../Module-10/test/reports',
+        cleanDestination: false,
+        fileName: 'testReport'
+      })
+    );
   },
 
   // Framework to use. Jasmine is recommended.
