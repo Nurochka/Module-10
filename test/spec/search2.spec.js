@@ -3,7 +3,10 @@ let EC = protractor.ExpectedConditions;
 
 describe("Searching for a product on regional https://www.bosch-home.by/ site", function(){
 
+
     it('go to not angular https://www.bosch-home.by/ page', async function(){
+        await PageFactory.getPage("At Home").open();
+        await PageFactory.getPage("At Home").CookieButton.click();
         await PageFactory.getPage("At Home").HomeAppliancesButton.click();  
         await PageFactory.getPage("At Home").ContinentDropdown.click();
         await PageFactory.getPage("At Home").selectContinent.clickElementByText("Europe");

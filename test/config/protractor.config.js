@@ -1,6 +1,6 @@
 // An example configuration file.
 const yargs = require('yargs').argv;
-var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+const Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 
 exports.config = {
   directConnect: true,

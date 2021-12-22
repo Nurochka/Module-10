@@ -12,7 +12,8 @@ class AtHomePage extends BasePage {
       this.HouseholdAppliancesPopup = new Element("HouseholdAppliance", "className", "M-Modals-CountrySelector__headline");
       this.GoToHomeAppliancesButton = new Element("GoToHomeAppliances", "className", 'A-Link__link A-Link__link--button');
       this.selectContinent = new Collection("Continent", "css", '[name="selectedRegion-{{$ctrl.businessActivityDetails.id}}"] option');
-      this.selectCountry = new Collection("Country", "css", '[name="selectedCountry-{{$ctrl.businessActivityDetails.id}}"] option');  
+      this.selectCountry = new Collection("Country", "css", '[name="selectedCountry-{{$ctrl.businessActivityDetails.id}}"] option');
+      this.CookieButton = new Element("CookieButton" , "className", "BoschPrivacySettingsV2__button BoschPrivacySettingsV2__button--primary");  
       
     };
 
